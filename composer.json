@@ -1,0 +1,21 @@
+{
+    "name": "pablopetr/aweber-api",
+    "description": "A Laravel package to Aweber API",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Pablopetr\\AweberApi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Pablo Eliézer",
+            "email": "opablopetr@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "league/oauth2-client": "dev-master"
+    }
+}
