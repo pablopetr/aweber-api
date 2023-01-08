@@ -13,7 +13,7 @@ class AweberApiServiceProvider extends ServiceProvider
             GenerateTokens::class,
         ]);
 
-        $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
+        $this->mergeConfigFrom(__DIR__ . '/config/aweber.php', 'aweber');
     }
 
     public function register()
