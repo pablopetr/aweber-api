@@ -20,8 +20,8 @@ class GenerateTokens extends Command
             'clientId'                => config('aweber.client_id'),
             'clientSecret'            => config('aweber.client_secret'),
             'redirectUri'             => config('aweber.redirect_uri'),
-            'urlAuthorize'            => 'https://auth.aweber.com/1.0/oauth/authorize',
-            'urlAccessToken'          => 'https://auth.aweber.com/1.0/oauth/access_token',
+            'urlAuthorize'            => self::OAUTH_URL . 'authorize',
+            'urlAccessToken'          => self::TOKEN_URL,
             'urlResourceOwnerDetails' => 'https://api.aweber.com/1.0/accounts',
         ]);
 
